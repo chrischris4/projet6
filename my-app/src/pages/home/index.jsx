@@ -1,5 +1,5 @@
-import Banner from './Banner'
-import Cart from './Cart'
+import Banner from '../../components/Banner'
+import Cart from '../../components/Cart'
 
 function App() {
     return  <div>
