@@ -32,7 +32,7 @@ button {
 
 .titreCollapseLong {
     background-color: #ff6060;
-    padding: 0 20px 0 20px;
+    padding: 10px;
     font-family: 'Montserrat';
     flex-wrap: wrap;
     display: flex;
