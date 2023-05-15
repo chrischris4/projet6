@@ -1,5 +1,13 @@
-.lmj-cart {
-	color: white;
-	background-color: #31b572;
-	padding: 32px;
+.kasa-cart {
+	margin: 50px 0 0 0;
+	border-radius: 10px;
+	width: 340px;
+	height: 340px;
+	color:  white;
+	background: linear-gradient(#FF6060, black);
+}
+
+h2 {
+	display: flex;
+	align-items: baseline;
 }

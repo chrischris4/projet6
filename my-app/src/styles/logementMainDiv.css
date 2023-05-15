@@ -1,0 +1,18 @@
+.logementMainDiv{
+    margin: auto;
+    width: 80%;
+}
+
+.tagLogement{
+    height: 80px;
+    justify-content: space-between;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.collapseLogement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

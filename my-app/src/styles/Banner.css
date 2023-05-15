@@ -1,17 +1,27 @@
-.lmj-banner {
-	color: black;
-	text-align: right;
-	padding: 32px;
-	border-bottom: solid 3px black;
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: row;
+.banner{
+	margin: auto;
+	width: 80%;
+	color :black;
 	align-items: center;
+	padding: 32px 0px 32px 0px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
 }
 
-.lmj-title {
-	padding-left: 32px;
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 20%;
+	text-decoration: none;
+	color :#FF6060;
 }
+
+link {
+	display: flex;
+	justify-content: center;
+}
+
 
 .lmj-logo {
 	height: 45px;

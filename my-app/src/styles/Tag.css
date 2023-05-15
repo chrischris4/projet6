@@ -1,0 +1,17 @@
+.tag {
+    display: flex;
+    justify-content: center;
+    width: 115px;
+    height: 25px;
+    color: white;
+    background-color: #FF6060;
+    border-radius: 10px;
+}
+
+.ptag{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+}
+

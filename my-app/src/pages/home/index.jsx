@@ -1,10 +1,18 @@
-import Banner from '../../components/Banner'
+import '../../styles/index.css'
 import Cart from '../../components/Cart'
+import Ban from '../../components/Ban'
 
 function App() {
-    return  <div>
-              <Banner />
-              <Cart />
+    return  <div className='indexMain'>
+              <Ban />
+                <div className='gallery'>
+                  <Cart />
+                  <Cart />
+                  <Cart />
+                  <Cart />
+                  <Cart />
+                  <Cart />
+                </div>
             </div>
 }
 
