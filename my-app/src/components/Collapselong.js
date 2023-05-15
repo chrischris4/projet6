@@ -12,13 +12,13 @@ function Collapselong() {
 
     return (
         <div className='mainCollapselong'>
-            <h2 className='h2cl'>lalalala
+            <div className='titreCollapseLong'>lalalala
                 <button onClick={collapseOpen}>
                     {isOpen ? 
                         <img src={vector} alt='vector' className='vector' />
                         : <img src={vectorDown} alt='vectorDown' className='vectorDown' />}
                 </button>
-            </h2>
+            </div>
                 {isOpen && 
                     <div className='collapseOpenlong'>Contenu du composant</div>}
         </div>

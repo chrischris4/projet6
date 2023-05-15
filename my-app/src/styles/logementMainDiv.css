@@ -1,6 +1,19 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Regular.ttf');
+}
+
 .logementMainDiv{
     margin: auto;
+}
+
+.nomLieu{
+    font-family: 'Montserrat';
+}
+
+.containerLogement{
     width: 80%;
+    margin: auto;
 }
 
 .tagLogement{

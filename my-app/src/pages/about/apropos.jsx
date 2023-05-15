@@ -1,5 +1,6 @@
 import Bannerabout from '../../components/Bannerabout'
 import Collapselong from '../../components/Collapselong';
+import Footer from '../../components/Footer';
 
 function App() {
     return  <div>
@@ -8,6 +9,7 @@ function App() {
                 <Collapselong />
                 <Collapselong />
                 <Collapselong />
+                <Footer />
             </div>
 }
 

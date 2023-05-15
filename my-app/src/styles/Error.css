@@ -1,39 +1,45 @@
 @font-face {
-    font-family: 'Raleway';
-    src: url('static/Raleway-Bold.ttf');
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Regular.ttf');
 }
 
 #errormain{
-    margin: auto;
+    margin: 0px auto 0px auto;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: column;
 }
 
 .error404{
-    font-family: 'Raleway';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 150px;
-    width: 50%;
+    margin-top: 66px;
+    margin-bottom: 40px;
+    height: auto;
+    font-family: 'Montserrat';
+    font-size: 288px;
     color: #FF6060;
 }
 
 
 p {    
-    font-family: 'Raleway';
+    font-family: 'Montserrat';
     font-size: 36px;
     align-items: center;
     color: #FF6060;
 }
 
 .naverror{
-    text-decoration: inherit;
-    text-decoration: none;
-    font-size: 18px;
+    width: 50%;
+    margin: auto;
     align-items: center;
+    justify-content: center;
+}
+
+.errorLink{
+    margin-top: 200px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    text-decoration: none;
     color: #FF6060;
 }

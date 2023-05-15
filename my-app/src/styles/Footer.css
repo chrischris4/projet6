@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Regular.ttf');
+}
+
+.footer{
+    margin-top: 200px;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+.kasa-logo-sombre{
+    margin-top: 60px;
+    width: 122px;
+    height: 40px;
+    margin-bottom: 50px;
+}
+
+.pfooter {
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 16px;
+}

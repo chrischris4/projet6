@@ -1,9 +1,8 @@
-import vector from '../assets/Vector.png'
-import vectorDown from '../assets/VectorDown.png'
-
+import vector from '../assets/Vector.png';
+import vectorDown from '../assets/VectorDown.png';
 
 import React, { useState } from 'react';
-import '../styles/Collapse.css'
+import '../styles/Collapse.css';
 
 function Collapse() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,14 +12,22 @@ function Collapse() {
     };
 
     return (
-        <div className='mainCollapse'>
-        <h2 className='h2c'>lalalala
-        <button onClick={collapseOpen}>
-            {isOpen ? <img src={vector} alt='vector' className='vector' />
-            : <img src={vectorDown} alt='vectorDown' className='vectorDown' />}
-        </button>
-        </h2>
-        {isOpen && <div className='collapseOpen'>Contenu du composant</div>}
+        <div className="mainCollapse">
+            <h2 className="h2c">
+                lalalala
+                <button onClick={collapseOpen}>
+                    {isOpen ? (
+                        <img src={vector} alt="vector" className="vector" />
+                    ) : (
+                        <img
+                            src={vectorDown}
+                            alt="vectorDown"
+                            className="vectorDown"
+                        />
+                    )}
+                </button>
+            </h2>
+            {isOpen && <div className="collapseOpen">Contenu du composant</div>}
         </div>
     );
 }

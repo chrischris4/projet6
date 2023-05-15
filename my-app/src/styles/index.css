@@ -1,16 +1,19 @@
-.indexMain{
-  width: 80%;
-  margin: auto;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('font/Montserrat-Regular.ttf');
 }
 
+
 .gallery{
+  padding-top: 40px;
+  font-family: 'Montserrat';
   border-radius: 10px;
   margin: auto;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 80%;
   background-color: #F6F6F6;
 }
 

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Regular.ttf');
+}
+
 .banner{
 	margin: auto;
 	width: 80%;
@@ -17,9 +22,16 @@ nav {
 	color :#FF6060;
 }
 
-link {
-	display: flex;
-	justify-content: center;
+.link {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	text-decoration: none;
+	color: #FF6060;
+}
+
+.link :hover{
+	border-bottom: 1px solid #FF6060;
+	color: #FF6060;
 }
 
 
