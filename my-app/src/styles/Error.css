@@ -3,7 +3,7 @@
     src: url('font/Montserrat-Regular.ttf');
 }
 
-#errormain{
+#errormain {
     margin: 0px auto 0px auto;
     justify-content: center;
     align-items: center;
@@ -12,34 +12,47 @@
     flex-direction: column;
 }
 
-.error404{
+.error404 {
     margin-top: 66px;
     margin-bottom: 40px;
     height: auto;
     font-family: 'Montserrat';
     font-size: 288px;
-    color: #FF6060;
+    color: #ff6060;
 }
 
-
-p {    
+p {
     font-family: 'Montserrat';
     font-size: 36px;
     align-items: center;
-    color: #FF6060;
+    color: #ff6060;
 }
 
-.naverror{
+.naverror {
     width: 50%;
     margin: auto;
     align-items: center;
     justify-content: center;
 }
 
-.errorLink{
+.errorLink {
     margin-top: 200px;
     font-size: 16px;
     font-family: 'Montserrat';
     text-decoration: none;
-    color: #FF6060;
+    color: #ff6060;
+}
+
+@media screen and (max-width: 550px) {
+    .error404 {
+        font-size: 96px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 18px;
+    }
+    .naverror {
+        width: 100%;
+    }
 }

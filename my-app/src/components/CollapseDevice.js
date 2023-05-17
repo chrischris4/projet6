@@ -1,20 +1,21 @@
 import vector from '../assets/Vector.png';
 import vectorDown from '../assets/VectorDown.png';
-import React, { useState } from 'react';
-import '../styles/Collapselong.css';
 
-function Collapselong() {
+import React, { useState } from 'react';
+import '../styles/CollapseDevice.css';
+
+function CollapseDevice() {
     const [isOpen, setIsOpen] = useState(false);
 
-    const collapseOpen = () => {
+    const collapseDeviceOpen = () => {
         setIsOpen(!isOpen);
     };
 
     return (
-        <div className="mainCollapselong">
-            <div className="titreCollapseLong">
+        <div className="mainCollapseDevice">
+            <h2 className="h2c">
                 lalalala
-                <button onClick={collapseOpen}>
+                <button onClick={collapseDeviceOpen}>
                     {isOpen ? (
                         <img src={vector} alt="vector" className="vector" />
                     ) : (
@@ -25,12 +26,12 @@ function Collapselong() {
                         />
                     )}
                 </button>
-            </div>
+            </h2>
             {isOpen && (
-                <div className="collapseOpenlong">Contenu du composant</div>
+                <div className="collapseDeviceOpen">Contenu du composant</div>
             )}
         </div>
     );
 }
 
-export default Collapselong;
+export default CollapseDevice;

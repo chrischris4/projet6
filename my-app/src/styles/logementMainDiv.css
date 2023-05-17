@@ -3,29 +3,83 @@
     src: url('font/Montserrat-Regular.ttf');
 }
 
-.logementMainDiv{
+.imgPortrait {
+    width: 70px;
+    height: 70px;
+}
+
+.logementMainDiv {
     margin: auto;
 }
 
-.nomLieu{
+.allInfo {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.infoTag {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nomImg {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.nomLieu {
+    font-size: 36px;
+    color: #ff6060;
     font-family: 'Montserrat';
 }
 
-.containerLogement{
-    width: 80%;
+.containerLogement {
+    width: 90%;
     margin: auto;
 }
 
-.tagLogement{
+.tagLogement {
     height: 80px;
     justify-content: space-between;
-    width: 40%;
+    width: 60%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-.collapseLogement{
+.nomImgNote {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.note {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapseLogement {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 550px) {
+    .nomLieu {
+        font-size: 18px;
+    }
+
+    .tagLogement {
+        width: 80%;
+    }
+    .collapseLogement {
+        flex-direction: column;
+    }
+    .allInfo {
+        flex-direction: column;
+    }
+    .nomImgNote {
+        flex-direction: row;
+    }
 }

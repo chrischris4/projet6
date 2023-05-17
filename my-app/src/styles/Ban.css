@@ -3,25 +3,34 @@
     src: url('font/Montserrat-Regular.ttf');
 }
 
-
-.ban{
+.ban {
     margin: 20px auto 43px auto;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 223px;
-    width: 80%;
+    width: 90%;
     border-radius: 10px;
-    background-image: url("../assets/IMG.png");
+    background-image: url('../assets/IMG.png');
     filter: brightness(50%);
     background-position: center;
     object-fit: fill;
 }
 
-.indexTitle{
+.indexTitle {
     position: relative;
     z-index: 1;
     font-family: 'Montserrat';
     color: white;
     font-size: 46px;
+}
+
+@media screen and (max-width: 550px) {
+    .ban {
+        height: 111px;
+    }
+
+    .indexTitle {
+        font-size: 24px;
+    }
 }

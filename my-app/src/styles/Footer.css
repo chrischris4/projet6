@@ -3,7 +3,7 @@
     src: url('font/Montserrat-Regular.ttf');
 }
 
-.footer{
+.footer {
     margin-top: 200px;
     height: 209px;
     display: flex;
@@ -14,7 +14,7 @@
     background-color: black;
 }
 
-.kasa-logo-sombre{
+.kasa-logo-sombre {
     margin-top: 60px;
     width: 122px;
     height: 40px;
@@ -25,4 +25,10 @@
     font-family: 'Montserrat';
     color: white;
     font-size: 16px;
+}
+
+@media screen and (max-width: 550px) {
+    .pfooter {
+        font-size: 12px;
+    }
 }

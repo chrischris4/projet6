@@ -1,13 +1,19 @@
 .kasa-cart {
-	margin: 0 0 40px 0;
-	border-radius: 10px;
-	width: 340px;
-	height: 340px;
-	color:  white;
-	background: linear-gradient(#FF6060, black);
+    margin: 0 0 40px 0;
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    color: white;
+    background: linear-gradient(#ff6060, black);
 }
 
 h2 {
-	display: flex;
-	align-items: baseline;
+    display: flex;
+    align-items: baseline;
+}
+
+@media screen and (max-width: 550px) {
+    .kasa-cart {
+        height: 255px;
+    }
 }

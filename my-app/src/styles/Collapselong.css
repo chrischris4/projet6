@@ -4,12 +4,6 @@
 }
 
 .mainCollapselong {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    width: 1023px;
-    height: 47px; */
     color: white;
     border-radius: 10px;
     max-width: 1000px;
@@ -23,8 +17,8 @@ button {
 }
 
 .collapseOpenlong {
+    font-size: 24px;
     border-radius: 10px;
-    width: 1023px;
     height: 300px;
     background-color: #f6f6f6;
     color: #ff6060;
@@ -39,5 +33,15 @@ button {
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
-    width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+    .mainCollapselong {
+        width: 90%;
+    }
+
+    .collapseOpenlong {
+        height: 143px;
+        font-size: 12px;
+    }
 }

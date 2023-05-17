@@ -3,39 +3,49 @@
     src: url('font/Montserrat-Regular.ttf');
 }
 
-.banner{
-	margin: auto;
-	width: 80%;
-	color :black;
-	align-items: center;
-	padding: 32px 0px 32px 0px;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
+.banner {
+    margin: auto;
+    width: 90%;
+    color: black;
+    align-items: center;
+    padding: 32px 0px 32px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 nav {
-	display: flex;
-	justify-content: space-between;
-	width: 20%;
-	text-decoration: none;
-	color :#FF6060;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    text-decoration: none;
+    color: #ff6060;
 }
 
 .link {
-	font-size: 24px;
-	font-family: 'Montserrat';
-	text-decoration: none;
-	color: #FF6060;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #ff6060;
 }
 
-.link :hover{
-	border-bottom: 1px solid #FF6060;
-	color: #FF6060;
+.link :hover {
+    border-bottom: 1px solid #ff6060;
+    color: #ff6060;
 }
 
+@media screen and (max-width: 550px) {
+    .kasa-logo {
+        width: 145px;
+        height: 47px;
+    }
 
-.lmj-logo {
-	height: 45px;
-	width: 45px;
+    nav {
+        width: 30%;
+    }
+
+    .link {
+        font-size: 12px;
+    }
 }
