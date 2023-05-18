@@ -94,4 +94,9 @@
     .nomImgNote {
         flex-direction: row;
     }
+
+    .containerLogement {
+        width: 90%;
+        margin: auto;
+    }
 }
