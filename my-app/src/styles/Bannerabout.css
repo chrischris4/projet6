@@ -4,9 +4,15 @@
     align-items: center;
     justify-content: center;
     height: 223px;
-    width: 90%;
+    width: 80%;
     border-radius: 10px;
     background-image: url('../assets/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png');
     background-position: center;
     object-fit: cover;
+}
+
+@media screen and (max-width: 550px) {
+    .bannerabout {
+        width: 90%;
+    }
 }

@@ -3,9 +3,9 @@
     src: url('font/Montserrat-Regular.ttf');
 }
 
-.banner {
+.header {
     margin: auto;
-    width: 90%;
+    width: 80%;
     color: black;
     align-items: center;
     padding: 32px 0px 32px 0px;
@@ -18,7 +18,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 20%;
+    width: 25%;
     text-decoration: none;
     color: #ff6060;
 }
@@ -41,11 +41,17 @@ nav {
         height: 47px;
     }
 
+    .header {
+        width: 90%;
+        padding: 20px 0px 0px 0px;
+    }
+
     nav {
-        width: 30%;
+        width: 40%;
     }
 
     .link {
-        font-size: 12px;
+        text-transform: uppercase;
+        font-size: 10px;
     }
 }

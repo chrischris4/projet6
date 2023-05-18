@@ -25,6 +25,7 @@ button {
 }
 
 .titreCollapseLong {
+    margin-top: 20px;
     background-color: #ff6060;
     padding: 10px;
     font-family: 'Montserrat';
@@ -36,6 +37,16 @@ button {
 }
 
 @media screen and (max-width: 550px) {
+    .vector {
+        width: 16px;
+        height: 9px;
+    }
+
+    .vectorDown {
+        width: 16px;
+        height: 9px;
+    }
+
     .mainCollapselong {
         width: 90%;
     }
@@ -43,5 +54,9 @@ button {
     .collapseOpenlong {
         height: 143px;
         font-size: 12px;
+    }
+    .titreCollapseLong {
+        margin-top: 20px;
+        padding: 5px;
     }
 }

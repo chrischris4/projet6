@@ -1,6 +1,6 @@
 import '../../styles/logementMainDiv.css';
 import Collapse from '../../components/Collapse';
-import Logement from '../../components/Logement';
+import LogementBanner from '../../components/LogementBanner';
 import Tag from '../../components/Tag';
 import Footer from '../../components/Footer';
 import portrait from '../../assets/Star.png';
@@ -9,7 +9,7 @@ function App() {
     return (
         <div className="logementMainDiv">
             <div className="containerLogement">
-                <Logement />
+                <LogementBanner />
                 <div className="allInfo">
                     <div className="infoTag">
                         <div className="nomLieu">
@@ -32,11 +32,11 @@ function App() {
                             />
                         </div>
                         <div className="note">
-                            <img src={portrait} alt="" />
-                            <img src={portrait} alt="" />
-                            <img src={portrait} alt="" />
-                            <img src={portrait} alt="" />
-                            <img src={portrait} alt="" />
+                            <img src={portrait} alt="" className="star" />
+                            <img src={portrait} alt="" className="star" />
+                            <img src={portrait} alt="" className="star" />
+                            <img src={portrait} alt="" className="star" />
+                            <img src={portrait} alt="" className="star" />
                         </div>
                     </div>
                 </div>

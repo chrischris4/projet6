@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     height: 223px;
-    width: 90%;
+    width: 80%;
     border-radius: 10px;
     background-image: url('../assets/IMG.png');
     filter: brightness(50%);
@@ -28,9 +28,13 @@
 @media screen and (max-width: 550px) {
     .ban {
         height: 111px;
+        width: 90%;
+        margin: 20px auto 0px auto;
     }
 
     .indexTitle {
+        margin-left: -50px;
         font-size: 24px;
+        width: 70%;
     }
 }

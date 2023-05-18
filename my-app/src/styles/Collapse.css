@@ -22,7 +22,7 @@ button {
     color: #ff6060;
 }
 
-.h2c {
+.titreCollapse {
     margin-bottom: 0px;
     padding: 10px;
     background-color: #ff6060;
@@ -38,5 +38,10 @@ button {
 @media screen and (max-width: 550px) {
     .mainCollapse {
         width: 100%;
+    }
+
+    .titreCollapse {
+        padding: 5px;
+        font-size: 12px;
     }
 }

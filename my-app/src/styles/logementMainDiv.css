@@ -8,6 +8,11 @@
     height: 70px;
 }
 
+.star {
+    width: 24px;
+    height: 24px;
+}
+
 .logementMainDiv {
     margin: auto;
 }
@@ -35,17 +40,16 @@
 }
 
 .containerLogement {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
 .tagLogement {
-    height: 80px;
     justify-content: space-between;
     width: 60%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .nomImgNote {
@@ -66,6 +70,14 @@
 }
 
 @media screen and (max-width: 550px) {
+    .note {
+        align-items: center;
+    }
+    .star {
+        width: 13px;
+        height: 13px;
+    }
+
     .nomLieu {
         font-size: 18px;
     }

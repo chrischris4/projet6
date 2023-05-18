@@ -45,6 +45,7 @@ p {
 
 @media screen and (max-width: 550px) {
     .error404 {
+        margin-top: 150px;
         font-size: 96px;
     }
 
@@ -54,5 +55,9 @@ p {
     }
     .naverror {
         width: 100%;
+    }
+
+    .errorLink {
+        margin-top: 110px;
     }
 }

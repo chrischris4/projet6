@@ -13,7 +13,7 @@ function Collapse() {
 
     return (
         <div className="mainCollapse">
-            <h2 className="h2c">
+            <h2 className="titreCollapse">
                 lalalala
                 <button onClick={collapseOpen}>
                     {isOpen ? (
