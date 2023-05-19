@@ -5,7 +5,6 @@
     border-radius: 10px;
     width: 340px;
     height: 340px;
-    object-fit: cover;
 }
 
 .cartTitle {
@@ -23,5 +22,10 @@ h2 {
     .cart-item {
         width: 100%;
         height: 255px;
+    }
+
+    .cart-link {
+        object-fit: cover;
+        width: 100%;
     }
 }
