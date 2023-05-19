@@ -1,60 +1,44 @@
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Cart.css';
 
-function Cart() {
+function Cart({ title, cover }) {
+    const cartStyle = {
+        backgroundImage: `url(${cover})`,
+    };
+
+    return (
+        <Link to="/logement" className="cart-link">
+            <div className="cart-item" style={cartStyle}>
+                <h2 className="cartTitle">{title}</h2>
+            </div>
+        </Link>
+    );
+}
+
+function CartList() {
+    const [cartData, setCartData] = useState([]);
+
+    useEffect(() => {
+        fetch(`/logements.json`)
+            .then((response) => response.json())
+            .then((cartData) => {
+                setCartData(cartData);
+            })
+            .catch((error) => console.log(error));
+    }, []);
+
+    if (cartData.length === 0) {
+        return <div>Loading...</div>;
+    }
+
     return (
         <div className="kasa-cart">
-            <h2>la vida loca</h2>
+            {cartData.map((item, index) => (
+                <Cart key={index} title={item.title} cover={item.cover} />
+            ))}
         </div>
     );
 }
 
-export default Cart;
-
-// import { useParams } from 'react-router-dom';
-// import '../styles/Cart.css';
-// import { useEffect, useState } from 'react';
-
-// function Cart() {
-//     const { title } = useParams();
-//     const [demdem, setDemdem] = useState({});
-//     const
-
-//     useEffect(() => {
-//         fetch(`/logements.json`)
-//             .then((response) => response.json())
-//             .then((response) => console.log(response, 1111))
-//             .catch((error) => console.log(error));
-//     }, []);
-//     console.log(demdem, 22222222);
-//     return (
-//         <div className="kasa-cart">
-//             <h2 className="cartTitle">{title}</h2>
-//         </div>
-//     );
-// }
-
-// export default Cart;
-
-// import { useParams } from 'react-router-dom';
-// import '../styles/Cart.css';
-// import { useEffect, useState } from 'react';
-
-// function Survey() {
-//     const title = useParams();
-//     const [surveyData, setSurveyData] = useState({});
-
-//     useEffect(() => {
-//         fetch(`/logements.json`)
-//             .then((response) => response.json())
-//             .then((surveyData) => setSurveyData(surveyData))
-//             .catch((error) => console.log(error));
-//     }, []);
-//     console.log(surveyData);
-//     return (
-//         <div>
-//             <h2>{surveyData[0].title}</h2>
-//         </div>
-//     );
-// }
-
-// export default Survey;
+export default CartList;

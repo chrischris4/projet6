@@ -7,7 +7,7 @@ function App() {
     return (
         <div className="indexMain">
             <Ban />
-            <div className="gallery">
+            <div>
                 <Cart />
             </div>
             <Footer />

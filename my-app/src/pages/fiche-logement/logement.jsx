@@ -5,7 +5,7 @@ import Tag from '../../components/Tag';
 import Footer from '../../components/Footer';
 import portrait from '../../assets/Star.png';
 
-function App() {
+function App({ selectedCartTitle }) {
     return (
         <div className="logementMainDiv">
             <div className="containerLogement">
@@ -13,7 +13,7 @@ function App() {
                 <div className="allInfo">
                     <div className="infoTag">
                         <div className="nomLieu">
-                            <h1>nom du logement</h1>
+                            <h1>{selectedCartTitle}</h1>
                             <h2>lieu</h2>
                         </div>
                         <div className="tagLogement">
