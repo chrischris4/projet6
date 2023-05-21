@@ -2,3 +2,19 @@
     margin-top: 20px;
     width: 100%;
 }
+
+.left,
+.right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.left {
+    left: 190px;
+}
+
+.right {
+    right: 190px;
+}

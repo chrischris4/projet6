@@ -3,7 +3,7 @@ import vectorDown from '../assets/VectorDown.png';
 import React, { useState } from 'react';
 import '../styles/Collapselong.css';
 
-function Collapselong() {
+function Collapselong({ title, content }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const collapseOpen = () => {
@@ -13,7 +13,7 @@ function Collapselong() {
     return (
         <div className="mainCollapselong">
             <div className="titreCollapseLong">
-                lalalala
+                {title}
                 <button onClick={collapseOpen}>
                     {isOpen ? (
                         <img src={vector} alt="vector" className="vector" />
@@ -26,9 +26,7 @@ function Collapselong() {
                     )}
                 </button>
             </div>
-            {isOpen && (
-                <div className="collapseOpenlong">Contenu du composant</div>
-            )}
+            {isOpen && <div className="collapseOpenlong">{content}</div>}
         </div>
     );
 }

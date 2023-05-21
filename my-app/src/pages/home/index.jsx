@@ -3,7 +3,7 @@ import Cart from '../../components/Cart';
 import Ban from '../../components/Ban';
 import Footer from '../../components/Footer';
 
-function App() {
+function Accueil() {
     return (
         <div className="indexMain">
             <Ban />
@@ -13,4 +13,4 @@ function App() {
     );
 }
 
-export default App;
+export default Accueil;

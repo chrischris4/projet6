@@ -2,7 +2,7 @@ import Footer from '../../components/Footer';
 import { Link } from 'react-router-dom';
 import '../../styles/Error.css';
 
-function App() {
+function ErrorPage() {
     return (
         <div>
             <div id="errormain">
@@ -19,4 +19,4 @@ function App() {
     );
 }
 
-export default App;
+export default ErrorPage;

@@ -4,8 +4,9 @@ import LogementBanner from '../../components/LogementBanner';
 import Tag from '../../components/Tag';
 import Footer from '../../components/Footer';
 import portrait from '../../assets/Star.png';
+import React from 'react';
 
-function App({ selectedCartTitle }) {
+function LogementPage() {
     return (
         <div className="logementMainDiv">
             <div className="containerLogement">
@@ -13,7 +14,7 @@ function App({ selectedCartTitle }) {
                 <div className="allInfo">
                     <div className="infoTag">
                         <div className="nomLieu">
-                            <h1>{selectedCartTitle}</h1>
+                            <h1>l</h1>
                             <h2>lieu</h2>
                         </div>
                         <div className="tagLogement">
@@ -50,4 +51,4 @@ function App({ selectedCartTitle }) {
     );
 }
 
-export default App;
+export default LogementPage;
